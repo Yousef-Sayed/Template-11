@@ -1,0 +1,68 @@
+///
+///   Mixin Used in Midda Quary To All Screens  
+///
+@mixin MinLarge {
+    @media (min-width:1200px) {
+        @content;
+    }
+}
+@mixin MaxMedium {
+    @media (min-width:992px) and (max-width:1199px) {
+        @content;
+    }
+}
+@mixin MaxSmall {
+    @media (min-width:768px) and (max-width:991px) {
+        @content;
+    }
+}
+@mixin MaxMobile {
+    @media (min-width:576px) and (max-width:767px) {
+        @content;
+    }
+}
+@mixin MiniMobile {
+    @media (min-width:250px) and (max-width:575px) {
+        @content;
+    }
+}
+@mixin From-358To-561 {
+    @media (min-width:358px) and (max-width:561px) {
+        @content;
+    }
+}
+@mixin From-350To-357 {
+    @media (min-width:358px) and (max-width:575px) {
+        @content;
+    }
+}
+@mixin From-350To-357 {
+    @media (min-width:358px) and (max-width:575px) {
+        @content;
+    }
+}
+///
+///    Overly Mixin
+///
+@mixin Overly($color,$alpha) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color,$alpha);
+}
+
+///
+/// Resst Design Input
+///
+@mixin Input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin: 20px 0;
+    display: block;
+}
+@mixin  background-grident {
+    background: linear-gradient(#4671EA,#AC34E7);
+}
